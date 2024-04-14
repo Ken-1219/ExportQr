@@ -1,0 +1,103 @@
+/* Overall container */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+    background-color: #B4D4FF;
+  /* background-color: #EEF5FF; */
+  padding: 0.5rem;
+}
+
+.qr-generator-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #B4D4FF; */
+    background-color: #EEF5FF;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #176B87;
+  font-family: 'Roboto', sans-serif; /* Optional font change */
+}
+
+
+span{
+  color: #00357a;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #86B6F6; /* Lighter text color for labels */
+  
+}
+
+::placeholder{
+  color: #aaa;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #fff; /* White background for inputs */
+  outline: none;
+  border: none;
+}
+
+/* Button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 10px; /* Add some space above the button */
+}
+
+button[type="submit"]:hover {
+  background-color: #0067cc;
+}
+
+/* Generated QR code */
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 5px solid #ddd; /* Add a border to the QR code */
+}
+
+/* Success message */
+p {
+  color: #F9E897;
+  font-weight: bold;
+  text-align: center;
+}
